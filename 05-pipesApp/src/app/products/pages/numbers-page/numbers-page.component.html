@@ -1,0 +1,23 @@
+<p-panel header="Numbers">
+
+  <p>
+    Pipes included in angular - Usually in the common module
+  </p>
+
+</p-panel>
+
+<div class="grid mt-2">
+
+  <div class="col-12 md:col-4">
+    <p-card header="Number">{{ decimalNumber | number:'1.2-2' }}</p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Currency">{{ decimalNumber | currency:'MXN':'symbol-narrow':'1.8-8' }}</p-card>
+  </div>
+
+  <div class="col-12 md:col-4">
+    <p-card header="Percentage">{{ percentage | percent:'1.2-2' }}</p-card>
+  </div>
+
+</div>
